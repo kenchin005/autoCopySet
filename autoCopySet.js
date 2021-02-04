@@ -1,9 +1,11 @@
 function autoCopySet() {
 
       for(var i=1,j=0; i <=5;i++,j++){
-
+          ////////////////////////スプレッドシートのキー↓ URL内現在だと1からはじまるキー↓
           var spreadsheet = SpreadsheetApp.openById("1-66cCwepyoemt1zJOrCXDYG3jAHXcIZhY4NQ4kVGRKY");
+          //////////////////////////コピーの元にするシート名↓
           var sheet = spreadsheet.getSheetByName("フォーマット");
+          //////////////////////////////////
           var newSheet = sheet.copyTo(spreadsheet);
          
           var ary = ['日','月','火','水','木','金','土'];
@@ -123,7 +125,7 @@ function autoCopySet() {
           var fff = newSheet.getRange(139,2).getValue();
           var ggg = newSheet.getRange(154,2).getValue();
           //////////////行数や列が変わるときはgetRange内を変更する！！
-          
+
           if(lastday<aaa){
             spreadsheet.deleteSheet(newSheet);
           }else if(lastday<bbb){
