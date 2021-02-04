@@ -129,17 +129,17 @@ function autoCopySet() {
           if(lastday<aaa){
             spreadsheet.deleteSheet(newSheet);
           }else if(lastday<bbb){
-            bbb = 0;
+            bbb = 1;
           }else if(lastday<ccc){
-            ccc = 0;
+            ccc = 1;
           }else if(lastday<ddd){
-            ddd = 0;
+            ddd = 1;
           }else if(lastday<eee){
-            eee = 0;
+            eee = 1;
           }else if(lastday<fff){
-            eee = 0;
+            eee = 1;
           }else if(lastday<ggg){
-            fff = 0;
+            fff = 1;
           }
           
           }
