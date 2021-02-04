@@ -30,6 +30,7 @@ function autoCopySet() {
           var name = month+"月"+j+"w";
           
         if(i!==1){
+          //////////////行数や列が変わるときはgetRange内を変更する！！
             newSheet.getRange(64,2).setValue("="+name+"!B154+1");
             newSheet.getRange(79,2).setValue("=B64+1");
             newSheet.getRange(94,2).setValue("=B79+1");
@@ -37,9 +38,12 @@ function autoCopySet() {
             newSheet.getRange(124,2).setValue("=B109+1");
             newSheet.getRange(139,2).setValue("=B124+1");
             newSheet.getRange(154,2).setValue("=B139+1");
+          ///////////////////(行,列)//////////////////
+
         }else{
           switch(week){
             case "月":
+              //////////////行数や列が変わるときはgetRange内を変更する！！
               newSheet.getRange(64,2).setValue(first);
               newSheet.getRange(79,2).setValue("=B64+1");
               newSheet.getRange(94,2).setValue("=B79+1");
@@ -47,58 +51,59 @@ function autoCopySet() {
               newSheet.getRange(124,2).setValue("=B109+1");
               newSheet.getRange(139,2).setValue("=B124+1");
               newSheet.getRange(154,2).setValue("=B139+1");
+              //////////////行数や列が変わるときはgetRange内を変更する！！
 
               break;
 
             case "火":
-                
+              //////////////行数や列が変わるときはgetRange内を変更する！！
               newSheet.getRange(79,2).setValue(first);
               newSheet.getRange(94,2).setValue("=B79+1");
               newSheet.getRange(109,2).setValue("=B94+1");
               newSheet.getRange(124,2).setValue("=B109+1");
               newSheet.getRange(139,2).setValue("=B124+1");
               newSheet.getRange(154,2).setValue("=B139+1");
-  
+            //////////////行数や列が変わるときはgetRange内を変更する！！
              break;
 
             case "水":
-
+            //////////////行数や列が変わるときはgetRange内を変更する！！
               newSheet.getRange(94,2).setValue(first);
               newSheet.getRange(109,2).setValue("=B94+1");
               newSheet.getRange(124,2).setValue("=B109+1");
               newSheet.getRange(139,2).setValue("=B124+1");
               newSheet.getRange(154,2).setValue("=B139+1");
-    
+            //////////////行数や列が変わるときはgetRange内を変更する！！
               break;
 
             case "木":
-
+            //////////////行数や列が変わるときはgetRange内を変更する！！
               newSheet.getRange(109,2).setValue(first);
               newSheet.getRange(124,2).setValue("=B109+1");
               newSheet.getRange(139,2).setValue("=B124+1");
               newSheet.getRange(154,2).setValue("=B139+1");
-      
+            //////////////行数や列が変わるときはgetRange内を変更する！！
               break;
 
             case "金":
-
+            //////////////行数や列が変わるときはgetRange内を変更する！！
               newSheet.getRange(124,2).setValue(first);
               newSheet.getRange(139,2).setValue("=B124+1");
               newSheet.getRange(154,2).setValue("=B139+1");
-        
+            //////////////行数や列が変わるときはgetRange内を変更する！！
               break;
 
             case "土":
-
+            //////////////行数や列が変わるときはgetRange内を変更する！！
               newSheet.getRange(139,2).setValue(first);
               newSheet.getRange(154,2).setValue("=B139+1");
-          
+            //////////////行数や列が変わるときはgetRange内を変更する！！
               break;
 
             case "日":
-
+            //////////////行数や列が変わるときはgetRange内を変更する！！
               newSheet.getRange(154,2).setValue(first);
-            
+            //////////////行数や列が変わるときはgetRange内を変更する！！
             break;
       
                 default:
@@ -109,7 +114,7 @@ function autoCopySet() {
   
           spreadsheet.setActiveSheet(newSheet);
           spreadsheet.moveActiveSheet(1);
-
+          //////////////行数や列が変わるときはgetRange内を変更する！！
           var aaa =  newSheet.getRange(64,2).getValue();
           var bbb = newSheet.getRange(79,2).getValue();
           var ccc = newSheet.getRange(94,2).getValue();
@@ -117,7 +122,8 @@ function autoCopySet() {
           var eee = newSheet.getRange(124,2).getValue();
           var fff = newSheet.getRange(139,2).getValue();
           var ggg = newSheet.getRange(154,2).getValue();
-
+          //////////////行数や列が変わるときはgetRange内を変更する！！
+          
           if(lastday<aaa){
             spreadsheet.deleteSheet(newSheet);
           }else if(lastday<bbb){
