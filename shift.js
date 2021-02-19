@@ -10,9 +10,14 @@ function shiftset() {
     console.log(month);
     console.log(lastday);
 
-    for(var i = 1;i<lastday;i++){
 
-    }
+    var values = sheet.getRange(4,5,1,30).getValues();
+
+    console.log(values);
+
+    // for(var i = 1;i<lastday;i++){
+
+    // }
         
     
     
