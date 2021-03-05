@@ -44,18 +44,20 @@ function myFunction() {
   var tokuhan = 2; 
   
   var date = {};
-  date[i] = spread.getRange(2,i+2,39,1).getValues();
-  console.log(date[i]);
+  
+  
   
     
 
 
     for(var i =1;i<32;i++){
+      var values = spread.getRange(2,i+2,39,1).getValues();
 
       for(var j = 1;j<=36;j++){
         switch (j) {
           case 1:
-          date[j][i]*mnp;  
+          values[j][i]*mnp.push(date);
+
             break;
         
           case 2:
@@ -92,20 +94,21 @@ function myFunction() {
 
       }
       
-    
-        if(){
+    }
+}
+    //     if(){
             
-          もし値が入っていたらdate[i]に.push;
+    //       もし値が入っていたらdate[i]に.push;
     
       
     
-       var total = date.reduce((sum, element) => sum + element, 0);
+    //    var total = date.reduce((sum, element) => sum + element, 0);
     
-    }
+    // }
     
     
     
       // var mnp = spread.getRange(2,3);
     
     
-    }
+    
