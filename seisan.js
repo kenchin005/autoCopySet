@@ -50,52 +50,52 @@ function myFunction() {
     
 
 
-    for(var i =1;i<32;i++){
-      var values = spread.getRange(2,i+2,39,1).getValues();
+//     for(var i =1;i<32;i++){
+//       var values = spread.getRange(2,i+2,39,1).getValues();
 
-      for(var j = 1;j<=36;j++){
-        switch (j) {
-          case 1:
-          values[j][i]*mnp.push(date);
+//       for(var j = 1;j<=36;j++){
+//         switch (j) {
+//           case 1:
+//           values[j][i]*mnp.push(date);
 
-            break;
+//             break;
         
-          case 2:
+//           case 2:
 
-            break;
+//             break;
 
-          case 3:
+//           case 3:
 
-            break;  
-          case 4:
+//             break;  
+//           case 4:
 
-            break;
+//             break;
           
-          case 4:
+//           case 4:
 
-            break;
+//             break;
           
-          case 4:
+//           case 4:
 
-            break;
-          case 4:
+//             break;
+//           case 4:
 
-            break;
-          case 4:
+//             break;
+//           case 4:
 
-            break;
+//             break;
           
 
 
-          default:
-            break;
-        }
+//           default:
+//             break;
+//         }
 
 
-      }
+//       }
       
-    }
-}
+//     }
+// }
     //     if(){
             
     //       もし値が入っていたらdate[i]に.push;
