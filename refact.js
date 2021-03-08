@@ -1,21 +1,25 @@
 function jouzan() {
     var spread = SpreadsheetApp.getActiveSheet();
 
-    for(var i = 4;i<=32;i++){
+    
+    var pointData = spread.getRange(6,3,41,1).getValues();
+
+
+
+    for(var i = 4;i<35;i++){
         var array = [];
-        
+        var dayData = spread.getRange(6,i,41,1).getValues();
 
        
-        for(var j=2;j<=42;j++){
-            var dayData = spread.getRange(j,i,42,1).getvalues();
-            var pointData = spread.getRange(j,3,42,1).getvalues();
-            console.log(dayData);
-            console.log(dayData[j][i]);
-            console.log(pointData);
-            console.log(pointData[j][i]);        
+        for(var j=0;j<41;j++){
 
-        var dayValues = dayData[j][i];
-        var point = pointData[j][i]
+        var dayValues = dayData[j][0];
+            // if(){
+
+            // }
+
+
+        var point = pointData[j][0]
         if(dayValues==="toku"){
             dayValues = 1;
             point = point/2;
@@ -23,10 +27,7 @@ function jouzan() {
         var daypoint = dayValues*point;
    
         array.push(daypoint);
-        console.log(dayValues);
-        console.log(point);
-        console.log(daypoint);
-        console.log(array);
+
         }
     
     
@@ -34,7 +35,7 @@ function jouzan() {
         var total = array.reduce((sum, element) => sum + element, 0);
         console.log(total);
         // セットvalue
-        var set = spread.getRange(43,i).setValue(total);
+        var set = spread.getRange(2,i).setValue(total);
         console.log(set);
         
      
